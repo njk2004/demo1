@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="587.0" prefWidth="823.0" style="-fx-background-color: #F3860C;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javabilling.preAdminController">
+    <children>
+        <Button fx:id="stockButton" layoutX="529.0" layoutY="268.0" mnemonicParsing="false" onAction="#stockButtonOnAction" prefHeight="103.0" prefWidth="171.0" text="View Stock Status">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Line endX="722.0" endY="1.52587890625E-5" layoutX="101.0" layoutY="152.0" startX="-100.0" style="visibility: white;" />
+        <Line endX="7.79998779296875" endY="404.0" layoutX="397.0" layoutY="183.0" startX="7.79998779296875" startY="-30.292861938476562" />
+        <ImageView fitHeight="129.0" fitWidth="131.0" layoutX="-8.0">
+            <image>
+                <Image url="@../../../Images/logo_nobg.png" />
+            </image>
+        </ImageView>
+      <Button fx:id="bSellerButton" layoutX="92.0" layoutY="268.0" mnemonicParsing="false" onAction="#bSellerButtonOnAction" prefHeight="103.0" prefWidth="171.0" text="best seller">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

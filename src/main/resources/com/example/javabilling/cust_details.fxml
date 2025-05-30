@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="436.0" prefWidth="600.0" style="-fx-background-color: orange;"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.javabilling.CustomerOrderController">
+
+    <children>
+        <AnchorPane layoutX="58.0" layoutY="33.0" prefHeight="296.0" prefWidth="482.0">
+            <children>
+                <TableView fx:id="tableView" layoutY="5.0" prefHeight="286.0" prefWidth="492.0">
+                    <columns>
+                        <TableColumn fx:id="custIdColumn" prefWidth="57.2" text="cust_id" />
+                        <TableColumn fx:id="custNameColumn" prefWidth="106.8" text="cust_name" />
+                        <TableColumn fx:id="phoneNumberColumn" prefWidth="123.6" text="phone no" />
+                        <TableColumn fx:id="emailColumn" prefWidth="112.4" text="email" />
+                        <TableColumn fx:id="loyaltyPointsColumn" prefWidth="92.4" text="loyalty points" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+
+        <TextField fx:id="phoneNumberField" layoutX="227.0" layoutY="347.0" prefHeight="26.0" prefWidth="232.0" />
+
+        <Text layoutX="58.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Enter the phone number :" textAlignment="CENTER" wrappingWidth="180.8">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+
+        <Button fx:id="enterButton" layoutX="472.0" layoutY="347.0" mnemonicParsing="false"
+                prefHeight="26.0" prefWidth="67.0" text="ENTER" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #f3860c; -fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javabilling.UserRegistrationController">
+    <children>
+        <ImageView id="logoreg" fx:id="logoreg" fitHeight="125.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Images/logo_nobg.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="319.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #ffffff; -fx-font-family: 'Times New Roman Bold'; -fx-font-size: 24px;" text="Enter New User Details" wrappingWidth="262.561279296875">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Label layoutX="225.0" layoutY="205.0" style="-fx-text-fill: #ffffff; -fx-font-family: 'Times New Roman'; -fx-font-size: 18px;" text="Full Name :" textFill="#fffcfc" />
+        <Label layoutX="224.0" layoutY="263.0" style="-fx-text-fill: #ffffff; -fx-font-family: 'Times New Roman'; -fx-font-size: 18px;" text="Phone Number:" />
+        <Label layoutX="224.0" layoutY="318.0" style="-fx-text-fill: #ffffff; -fx-font-family: 'Times New Roman'; -fx-font-size: 18px;" text="Username:" />
+        <Label layoutX="224.0" layoutY="373.0" style="-fx-text-fill: #ffffff; -fx-font-family: 'Times New Roman'; -fx-font-size: 18px;" text="New Password:" />
+        <Label layoutX="225.0" layoutY="419.0" style="-fx-text-fill: #ffffff; -fx-font-family: 'Times New Roman'; -fx-font-size: 18px;" text="Confirm New Password:" />
+        <TextField fx:id="nametextfield" layoutX="450.0" layoutY="196.0" promptText="Enter Name" style="-fx-background-color: #ffffff; -fx-border-color: #f3860c; -fx-border-radius: 5; -fx-padding: 8; -fx-font-size: 14px; -fx-prompt-text-fill: #666666;" />
+        <TextField fx:id="phonenumberfield" layoutX="450.0" layoutY="254.0" promptText="Enter Phone Number" style="-fx-background-color: #ffffff; -fx-border-color: #f3860c; -fx-border-radius: 5; -fx-padding: 8; -fx-font-size: 14px; -fx-prompt-text-fill: #666666;" />
+        <TextField fx:id="usernamefield" layoutX="450.0" layoutY="309.0" promptText="Enter Username" style="-fx-background-color: #ffffff; -fx-border-color: #f3860c; -fx-border-radius: 5; -fx-padding: 8; -fx-font-size: 14px; -fx-prompt-text-fill: #666666;" />
+        <PasswordField fx:id="passwordfield" layoutX="450.0" layoutY="364.0" promptText="Enter Password" style="-fx-background-color: #ffffff; -fx-border-color: #f3860c; -fx-border-radius: 5; -fx-padding: 8; -fx-font-size: 14px; -fx-prompt-text-fill: #666666;" />
+        <PasswordField fx:id="confirmpasswordfield" layoutX="450.0" layoutY="410.0" promptText="Confirm Password" style="-fx-background-color: #ffffff; -fx-border-color: #f3860c; -fx-border-radius: 5; -fx-padding: 8; -fx-font-size: 14px; -fx-prompt-text-fill: #666666;" />
+        <Button fx:id="regsubmitbutton" layoutX="365.0" layoutY="502.0" onAction="#handleSubmit" style="-fx-background-color: #FBBF77; -fx-text-fill: #ffffff; -fx-font-size: 16px; -fx-font-family: 'Arial'; -fx-padding: 8 20; -fx-background-radius: 5; -fx-cursor: hand;" text="Submit" />
+      <BorderPane layoutY="4.0" prefHeight="20.0" prefWidth="900.0" />
+    </children>
+</Pane>

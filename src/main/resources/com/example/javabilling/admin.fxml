@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #f3860c;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javabilling.AController">
+    <children>
+        <Button fx:id="takeOrderButton" layoutX="101.0" layoutY="302.0" mnemonicParsing="false" onAction="#takeOrderButtonOnAction" prefHeight="140.0" prefWidth="213.0" style="-fx-background-color: #FBBF77;" text="Admin">
+            <font>
+                <Font name="Times New Roman" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="pastOrderButton" layoutX="579.0" layoutY="302.0" mnemonicParsing="false" onAction="#pastOrderButtonOnAction" prefHeight="140.0" prefWidth="213.0" style="-fx-background-color: #FBBF77;" text="User">
+            <font>
+                <Font name="Times New Roman" size="17.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="380.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Images/logo_nobg.png" />
+            </image>
+        </ImageView>
+        <Separator layoutX="449.0" layoutY="151.0" orientation="VERTICAL" prefHeight="558.0" prefWidth="0.0" />
+        <Separator layoutY="153.0" prefHeight="0.0" prefWidth="903.0" />
+    </children>
+</AnchorPane>

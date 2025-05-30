@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.javabilling.LoginController"
+      prefWidth="900.0" prefHeight="700.0"
+      style="-fx-background-color: #f3860c;">
+
+    <children>
+        <VBox alignment="CENTER" layoutX="250" layoutY="100" prefWidth="400" spacing="20" style="-fx-padding: 20;">
+            <ImageView fx:id="brandingImageView" fitHeight="187.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true" />
+
+            <Label style="-fx-font-size: 14px; -fx-text-fill: #333333;" text="Username" />
+            <TextField fx:id="usernameTextField" promptText="Enter Username"
+                       style="-fx-padding: 10px; -fx-background-color: #f0f0f0; -fx-border-color: #f3680c; -fx-border-radius: 5px;" />
+
+            <Label style="-fx-font-size: 14px; -fx-text-fill: #333333;" text="Password" />
+            <PasswordField fx:id="passwordField" promptText="Enter Password"
+                           style="-fx-padding: 10px; -fx-background-color: #f0f0f0; -fx-border-color: #f3680c; -fx-border-radius: 5px;" />
+
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginButtonOnAction"
+                    prefHeight="30.0" prefWidth="150.0"
+                    style="-fx-background-color: #FBBF77; -fx-text-fill: white; -fx-font-size: 14px; -fx-border-radius: 5px;" text="Login" />
+
+            <Button fx:id="registerButton" onAction="#registerButtonOnAction"
+                    style="-fx-font-size: 14px; -fx-text-fill: #0000ee;" text="Register" />
+        </VBox>
+    </children>
+</Pane>

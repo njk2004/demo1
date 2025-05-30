@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="442.0" prefWidth="596.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javabilling.StockController">
+    <children>
+        <TableView fx:id="stockTable" layoutX="55.0" layoutY="59.0" prefHeight="296.0" prefWidth="482.0" style="-fx-background-color: pink;">
+            <columns>
+                <TableColumn fx:id="colFoodName" prefWidth="238.1999969482422" text="Food Name" />
+                <TableColumn fx:id="colQuantity" prefWidth="251.4000244140625" text="Quantity in Stock" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnRefresh" layoutX="200" layoutY="363.0" onAction="#refreshTable" prefHeight="32.0" prefWidth="170.0" text="Refresh" />
+    </children>
+</AnchorPane>

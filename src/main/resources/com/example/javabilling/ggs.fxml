@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javabilling.MenuController1">
+
+    <left>
+        <VBox prefWidth="269.0" spacing="10" style="-fx-background-color: orange;" BorderPane.alignment="CENTER_LEFT">
+            <children>
+                <Label style="-fx-font-size: 18; -fx-font-weight: bold;" text="Order Summary" />
+                <TableView fx:id="orderTable" prefHeight="400">
+                    <columns>
+                        <TableColumn fx:id="itemCol" prefWidth="100" text="Item" />
+                        <TableColumn fx:id="qtyCol" prefWidth="60" text="Quantity" />
+                        <TableColumn fx:id="amountCol" prefWidth="80" text="Amount" />
+                    </columns>
+                </TableView>
+                <Label fx:id="totalLabel" style="-fx-font-size: 14;" text="Total: ₹0" />
+                <Button onAction="#confirmOrder" text="Confirm" />
+            </children>
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+        </VBox>
+    </left>
+
+    <top>
+        <HBox spacing="10" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Category:" />
+                <ComboBox fx:id="categoryCombo" onAction="#loadCategoryItems" />
+            </children>
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+        </HBox>
+    </top>
+
+    <center>
+        <TilePane fx:id="itemsPane" hgap="10" prefColumns="3" style="-fx-background-color: pink;" vgap="10" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+        </TilePane>
+    </center>
+</BorderPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="442.0" prefWidth="596.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javabilling.StockController1">
+
+    <children>
+        <TableView fx:id="stockTable" layoutX="55.0" layoutY="59.0" prefHeight="296.0" prefWidth="482.0">
+            <columns>
+                <TableColumn fx:id="colFoodName" prefWidth="238.2" text="Food Name" />
+                <TableColumn fx:id="colQuantity" prefWidth="251.4" text="Quantity in Stock" />
+            </columns>
+        </TableView>
+
+        <Button fx:id="btnRefresh" layoutX="69.0" layoutY="363.0" onAction="#refreshTable" prefHeight="32.0" prefWidth="146.0" text="Refresh" />
+        <Button fx:id="btnSaveChanges" layoutX="382.0" layoutY="363.0" onAction="#saveChanges" prefHeight="32.0" prefWidth="140.0" text="Save Changes" />
+    </children>
+</AnchorPane>
